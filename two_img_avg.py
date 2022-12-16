@@ -9,13 +9,17 @@ print(img1.shape)
 print(img2.shape)
 
 
+
 h1, w1 = img1.shape[:2]
+img2 = c.resize(img2, (w1, h1))
+print(img2.shape)
 h2, w2 = img2.shape[:2]
 
-if (h1 == h2 and w1 == w2):
-    img_avg = np.zeros([h1, w1], int)
-    img_avg = (img1+img2)/2
-    c.imshow('average image', img_avg)
-    c.waitKey(0)
-else:
-    print('average not possible')
+# if (h1 == h2 and w1 == w2):
+img_avg = np.zeros([h1, w1], int)
+img_avg = (img1+img2)/2
+c.imshow('average image', img_avg)
+c.waitKey(0)
+# else:
+#     print('average not possible')
+
