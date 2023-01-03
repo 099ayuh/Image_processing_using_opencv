@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread('image2.jpg', 0)
+img = cv2.imread('maya.png', 0)
 
 cv2.imshow('before equilization', img)
 
